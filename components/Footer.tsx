@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-y-4 gap-x-8">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="text-zinc-500 hover:text-emerald-500 transition-colors font-semibold text-sm md:text-base">
+                  <a href={item.href} className="text-zinc-500 hover:text-red-600 transition-colors font-semibold text-sm md:text-base">
                     {item.label}
                   </a>
                 </li>
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex flex-col">
                 <span className="text-zinc-600 text-[10px] font-black uppercase tracking-tighter">OPERATING HOURS</span>
-                <span className="text-emerald-500 text-xs md:text-sm font-black tracking-widest uppercase">{CONTACT_INFO.hours}</span>
+                <span className="text-red-600 text-xs md:text-sm font-black tracking-widest uppercase">{CONTACT_INFO.hours}</span>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
           </p>
           <button
             onClick={scrollToTop}
-            className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-500 hover:bg-zinc-800 hover:text-emerald-600 transition-all min-h-[44px] min-w-[44px]"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-500 hover:bg-zinc-800 hover:text-red-600 transition-all min-h-[44px] min-w-[44px]"
           >
             <ArrowUp size={20} />
           </button>

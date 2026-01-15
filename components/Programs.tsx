@@ -27,7 +27,7 @@ const Programs: React.FC<ProgramsProps> = ({ onProgramClick }) => {
           {PROGRAMS.map((program) => (
             <div
               key={program.id}
-              className="group relative bg-zinc-950 border border-zinc-800/50 rounded-2xl overflow-hidden hover:border-emerald-600/50 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full"
+              className="group relative bg-zinc-950 border border-zinc-800/50 rounded-2xl overflow-hidden hover:border-red-600/50 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full"
             >
               <div className="aspect-video overflow-hidden shrink-0">
                 <img
@@ -39,10 +39,10 @@ const Programs: React.FC<ProgramsProps> = ({ onProgramClick }) => {
               </div>
 
               <div className="p-6 relative flex flex-col flex-grow">
-                <div className="absolute -top-10 left-6 w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-600/30">
+                <div className="absolute -top-10 left-6 w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center shadow-lg shadow-red-600/30">
                   <IconRenderer name={program.icon} className="text-white" />
                 </div>
-                <h4 className="text-xl font-black text-white mt-4 mb-2 group-hover:text-emerald-600 transition-colors uppercase tracking-tight">
+                <h4 className="text-xl font-black text-white mt-4 mb-2 group-hover:text-red-600 transition-colors uppercase tracking-tight">
                   {program.title}
                 </h4>
                 <p className="text-zinc-500 text-sm leading-relaxed mb-6 flex-grow">
@@ -50,7 +50,7 @@ const Programs: React.FC<ProgramsProps> = ({ onProgramClick }) => {
                 </p>
                 <button 
                   onClick={() => onProgramClick(program)}
-                  className="text-xs font-black text-white/50 group-hover:text-emerald-600 uppercase tracking-widest transition-colors flex items-center gap-2 mt-auto min-h-[44px]"
+                  className="text-xs font-black text-white/50 group-hover:text-red-600 uppercase tracking-widest transition-colors flex items-center gap-2 mt-auto min-h-[44px]"
                 >
                   LEARN MORE <span className="text-lg">→</span>
                 </button>

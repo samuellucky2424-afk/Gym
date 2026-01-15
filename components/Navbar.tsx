@@ -25,8 +25,8 @@ const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="flex flex-col">
-              <span className="text-2xl font-black tracking-tighter text-red-600 leading-none">CINO</span>
-              <span className="text-xs font-bold tracking-[0.3em] text-zinc-400">UNIVERSAL GYM</span>
+              <span className="text-2xl font-black tracking-tighter text-emerald-600 leading-none">CINO</span>
+              <span className="text-xs font-bold tracking-[0.3em] text-zinc-400 uppercase">Universal Gym</span>
             </a>
           </div>
 
@@ -35,14 +35,14 @@ const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-semibold hover:text-red-600 transition-colors uppercase tracking-wider"
+                className="text-sm font-semibold hover:text-emerald-500 transition-colors uppercase tracking-wider"
               >
                 {item.label}
               </a>
             ))}
             <button
               onClick={onJoinClick}
-              className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full font-bold text-sm transition-all flex items-center gap-2 group"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full font-bold text-sm transition-all flex items-center gap-2 group"
             >
               <Phone size={16} className="group-hover:animate-bounce" />
               JOIN NOW
@@ -52,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-zinc-100 hover:text-red-600 transition-colors"
+              className="text-zinc-100 hover:text-emerald-600 transition-colors"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
               key={item.label}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-3 text-lg font-bold hover:text-red-600 transition-colors"
+              className="block px-3 py-3 text-lg font-bold hover:text-emerald-500 transition-colors"
             >
               {item.label}
             </a>
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ onJoinClick }) => {
                 onJoinClick();
                 setIsOpen(false);
               }}
-              className="w-full bg-red-600 text-white py-4 rounded-xl font-bold flex justify-center items-center gap-2"
+              className="w-full bg-emerald-600 text-white py-4 rounded-xl font-bold flex justify-center items-center gap-2"
             >
               <Phone size={20} />
               JOIN NOW

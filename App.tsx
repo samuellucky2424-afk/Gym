@@ -34,8 +34,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-zinc-950 overflow-x-hidden selection:bg-red-600 selection:text-white">
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.03]" style={{ backgroundImage: `url('https://www.transparenttextures.com/patterns/dark-matter.png')` }}></div>
+    <div className="relative min-h-screen bg-zinc-950 overflow-x-hidden selection:bg-emerald-600 selection:text-white">
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.05] nigerian-pattern"></div>
       
       <Navbar onJoinClick={() => setIsJoinModalOpen(true)} />
       
@@ -70,15 +70,15 @@ const App: React.FC = () => {
             <div className="grid gap-6">
               <div className="space-y-2">
                 <label className="text-xs font-black text-zinc-500 uppercase tracking-widest">Full Name</label>
-                <input required type="text" className="w-full bg-zinc-800 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:border-red-600 outline-none" />
+                <input required type="text" className="w-full bg-zinc-800 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:border-emerald-600 outline-none" />
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-black text-zinc-500 uppercase tracking-widest">Phone Number</label>
-                <input required type="tel" className="w-full bg-zinc-800 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:border-red-600 outline-none" />
+                <input required type="tel" className="w-full bg-zinc-800 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:border-emerald-600 outline-none" />
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-black text-zinc-500 uppercase tracking-widest">Goal</label>
-                <select className="w-full bg-zinc-800 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:border-red-600 outline-none">
+                <select className="w-full bg-zinc-800 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:border-emerald-600 outline-none">
                   <option>Weight Loss</option>
                   <option>Muscle Gain</option>
                   <option>General Fitness</option>
@@ -87,7 +87,7 @@ const App: React.FC = () => {
             </div>
             <button 
               disabled={isSubmitting}
-              className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-xl font-black tracking-widest text-lg transition-all flex items-center justify-center gap-2"
+              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-xl font-black tracking-widest text-lg transition-all flex items-center justify-center gap-2"
             >
               {isSubmitting ? <Loader2 className="animate-spin" /> : 'CONFIRM JOIN'}
             </button>
@@ -108,7 +108,7 @@ const App: React.FC = () => {
             alt={selectedProgram?.title}
           />
           <div>
-            <h4 className="text-red-600 font-black uppercase tracking-widest text-sm mb-2">Program Overview</h4>
+            <h4 className="text-emerald-600 font-black uppercase tracking-widest text-sm mb-2">Program Overview</h4>
             <p className="text-zinc-300 leading-relaxed text-lg">
               {selectedProgram?.longDescription}
             </p>
@@ -131,7 +131,7 @@ const App: React.FC = () => {
               setSelectedProgram(null);
               setIsJoinModalOpen(true);
             }}
-            className="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-xl font-black tracking-widest transition-all"
+            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-xl font-black tracking-widest transition-all"
           >
             JOIN THIS PROGRAM
           </button>

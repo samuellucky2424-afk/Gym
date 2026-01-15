@@ -32,17 +32,17 @@ const Hero: React.FC<HeroProps> = ({ onJoinClick }) => {
 
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 leading-[0.9]">
             UNLEASH YOUR <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-400">INNER BEAST</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-400">INNER BEAST</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-xl leading-relaxed">
-            Premium fitness guidance in the heart of Akahia. Expert coaching, world-class equipment, and a 24/7 community that pushes you beyond limits.
+            Premium fitness guidance in the heart of Edo State. Expert coaching, world-class equipment, and a 24/7 community that pushes you beyond limits.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={onJoinClick}
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-black text-lg transition-all flex items-center justify-center gap-2 group shadow-lg shadow-red-600/20"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-black text-lg transition-all flex items-center justify-center gap-2 group shadow-lg shadow-emerald-600/20"
             >
               START TRAINING
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />

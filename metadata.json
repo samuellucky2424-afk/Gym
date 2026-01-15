@@ -1,0 +1,8 @@
+{
+  "name": "Cino Universal Gym",
+  "description": "A premium, modern fitness center website featuring weight loss, bodybuilding, and wellness programs with 24/7 availability.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

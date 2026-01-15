@@ -4,34 +4,34 @@ import { Target, Shield, Users } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-zinc-950">
+    <section id="about" className="py-16 md:py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-red-600/20 rounded-2xl blur-2xl group-hover:bg-red-600/30 transition-all"></div>
-            <div className="relative rounded-2xl overflow-hidden aspect-square lg:aspect-auto lg:h-[600px] border border-zinc-800">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative group px-2 sm:px-0">
+            <div className="absolute -inset-4 bg-emerald-600/20 rounded-2xl blur-2xl group-hover:bg-emerald-600/30 transition-all"></div>
+            <div className="relative rounded-2xl overflow-hidden aspect-square sm:aspect-[4/3] lg:aspect-auto lg:h-[600px] border border-zinc-800 shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&q=80&w=800"
                 alt="Gym session"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute bottom-6 left-6 right-6 bg-zinc-950/90 backdrop-blur-md p-6 rounded-xl border border-zinc-800">
-                <p className="text-zinc-400 italic font-medium leading-relaxed">
+              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 bg-zinc-950/90 backdrop-blur-md p-4 md:p-6 rounded-xl border border-zinc-800">
+                <p className="text-zinc-400 italic font-medium leading-relaxed text-sm md:text-base">
                   "At Cino Universal Gym, we don't just build muscles; we build confidence and discipline that transcends the gym floor."
                 </p>
-                <p className="text-white font-bold mt-4">— Cino Universal Management</p>
+                <p className="text-white font-bold mt-3 md:mt-4 text-sm md:text-base">— Cino Universal Management</p>
               </div>
             </div>
           </div>
 
-          <div>
-            <h2 className="text-red-600 font-black text-sm uppercase tracking-[0.3em] mb-4">The Universal Standard</h2>
-            <h3 className="text-4xl sm:text-5xl font-black text-white mb-8 tracking-tighter">WE ARE MORE THAN JUST <br />A FITNESS CENTER</h3>
-            <p className="text-zinc-400 text-lg mb-10 leading-relaxed">
+          <div className="px-2 sm:px-0">
+            <h2 className="text-emerald-600 font-black text-xs md:text-sm uppercase tracking-[0.3em] mb-4">The Universal Standard</h2>
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 md:mb-8 tracking-tighter leading-tight">WE ARE MORE THAN JUST <br className="hidden sm:block" />A FITNESS CENTER</h3>
+            <p className="text-zinc-400 text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
               Cino Universal Gym is a professional fitness center with the sole purpose of helping members achieve their fitness goals through structured training, wellness programs, and expert guidance. Based in Akahia, we've become the gold standard for physical transformation.
             </p>
 
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {[
                 {
                   icon: Target,
@@ -49,13 +49,13 @@ const About: React.FC = () => {
                   desc: "Professional trainers who are invested in your personal growth journey."
                 }
               ].map((item, idx) => (
-                <div key={idx} className="flex gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-red-600/10 rounded-xl flex items-center justify-center border border-red-600/20">
-                    <item.icon className="text-red-600" size={24} />
+                <div key={idx} className="flex gap-4 md:gap-6 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-emerald-600/10 rounded-xl flex items-center justify-center border border-emerald-600/20">
+                    <item.icon className="text-emerald-600" size={20} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-1">{item.title}</h4>
-                    <p className="text-zinc-500 leading-relaxed">{item.desc}</p>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-1">{item.title}</h4>
+                    <p className="text-zinc-500 leading-relaxed text-sm md:text-base">{item.desc}</p>
                   </div>
                 </div>
               ))}
